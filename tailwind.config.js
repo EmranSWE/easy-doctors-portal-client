@@ -4,7 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'background': "url('/src/assets/images/chair.png')",
+        
+      }
+    },
   },
   daisyui: {
     themes: [
