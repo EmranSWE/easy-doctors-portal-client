@@ -4,7 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { toast } from 'react-toastify';
 const BookingModal = ({ date, treatment, setTreatment,refetch }) => {
-    const { _id, name, slots } = treatment;
+    const { _id, name, slots,price } = treatment;
     const [user, loading, error] = useAuthState(auth);
     const formatedDate=format(date,'PP')
     const handleBooking = event => {
@@ -17,6 +17,7 @@ const BookingModal = ({ date, treatment, setTreatment,refetch }) => {
              treatment: name, 
              date: formatedDate,
              slot,
+             price,
              patient:user.email,
              phone:phone,
             name:user.displayName};
@@ -31,7 +32,6 @@ const BookingModal = ({ date, treatment, setTreatment,refetch }) => {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log('Success:', data);
                 if(data.success){
                     toast(`Appoinment is set, ${formatedDate} as ${slot}`)
                 }

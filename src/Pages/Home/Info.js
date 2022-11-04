@@ -10,10 +10,10 @@ const Info = () => {
     return (
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
           <InfoCard bgclassName="bg-gradient-to-r from-secondary to-primary" img={clock} heading={heading1}></InfoCard>  
-          <InfoCard bgclassName="bg-accent" img={map} heading={heading2}></InfoCard>  
+          <InfoCard bgclassName="bg-neutral" img={map} heading={heading2}></InfoCard>  
           <InfoCard bgclassName="bg-gradient-to-r from-secondary to-primary" img={phone} heading={heading3}></InfoCard>  
         </div>
     );
 };
 
-export default Info;<InfoCard></InfoCard>
+export default Info;

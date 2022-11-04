@@ -4,10 +4,10 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const Users = () => {
-    const { data: users, isLoading,refetch } = useQuery('users', () => fetch('http://localhost:5000/user',{
-        method:'GET',
-        headers:{
-            authorization:`bearer ${localStorage.getItem('accessToken')}`
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
+        method: 'GET',
+        headers: {
+            authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
     }).then(res => res.json()));
     if (isLoading) {
@@ -16,8 +16,8 @@ const Users = () => {
     return (
         <div>
             <h2 className="text-2xl">Users{users?.length}</h2>
-            <div class="overflow-x-auto">
-                <table class="table w-full">
+            <div className="overflow-x-auto">
+                <table className="table w-full">
                     <thead>
                         <tr>
                             <th></th>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth'
 const MyAppointment = () => {
@@ -12,11 +12,10 @@ const MyAppointment = () => {
             fetch(`http://localhost:5000/booking?patient=${user.email}`,{
               method:'GET',
               headers:{
-                'authorization':`bearer ${localStorage.getItem('accessToken')}`
+                'authorization':`Bearer ${localStorage.getItem('accessToken')}`
               }
             })
         .then(res => {
-          console.log('res',res)
           if(res.status===401 || res.status===403 || res.status===500){
             const logout = () => {
               signOut(auth);
@@ -32,25 +31,39 @@ const MyAppointment = () => {
     return (
         <div>
             <h1>My Appointment:{appointments?.length}</h1>
-            <div class="overflow-x-auto">
-  <table class="table w-full">
+            <div className="overflow-x-auto">
+  <table className="table w-full">
     <thead>
       <tr>
+        <th></th>
         <th>Name</th>
         <th>Date</th>
         <th>Time</th>
         <th>Treatment</th>
+        <th>Payment</th>
       </tr>
     </thead>
     <tbody>
         {
-            appointments?.map((a,index) =>  <tr>
+            appointments?.map((a,index) =>  <tr key={index}>
                 <td>{index+1}</td>
                 <td>{a.name}</td>
                 <td>{a.date}</td>
                 <td>{a.slot}</td>
                 <td>{a.treatment}</td>
-              </tr>)
+                <td>{
+                (a.price && !a.paid) &&
+                <Link to={`/dashboard/payment/${a._id}`}><button className='btn btn-success'>Pay</button></Link>}
+                {
+                (a.price && a.paid) && <div>
+                  <span className='text-secondary'>Paid</span>
+
+                  <p>Transaction id: <span className='text-orange-500'>{a.transactionId}</span> </p>
+                </div>}
+               </td>
+              </tr>
+              
+              )
         }
     </tbody>
   </table>
