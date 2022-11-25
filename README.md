@@ -1,70 +1,153 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name: Easy Doctors Portal
 
-## Available Scripts
+The easy Doctors portal is online doctor and patient management service.In this website, patient can booking appoinment.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Demo
+Easy Doctors Portal:-
+[Live Demo](https://easy-doctors-portal.web.app/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technology Stack
+* HTML5
+* CSS3
+* TailwindCSS
+* DaisyUi
+* JavaScript
+* React
+* React Router
+* Firebase
+* Json Web Token For verify
+* Nodemailer
+* sendgrid
+* Digital payment: Stripe
+* MongoDb Databases
+* Heroku 
+## Feature of The Car Doctor
+#### What Technology integrated:
+* This website is doctor and patient management website
+* JWT integrated for verify the real user
+* Different types user can use it: Such as, petient, admin
+* Verify role, where admin has special privilege
+* For payment using stripe Digital payment gateway
+* Nodemailer sendgrid integrated for autometic email send to the customer
+* MongoDb/NoSql for stored data
+* Heroku cloud platform for service supporting.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### What Admin Can do:
+- As an admin, Admin can see some extra options
+- An admin can see all the user 
+- An admin can make another admin
+- An admin can remove user
+- An admin can add a new doctor 
+- And admin can delete or manage all doctors
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### What Patient can Do:
+- A patient can see different treamnent
+- Patient can select date for the booking
+- If slot on that date is available, then patient can booking the appoinment
+- After completion of booking, user can see their booking details on their dashboard.
+- Then patient can see a pay option on their dashboard> My Appoinment page.
+- If click on pay button then they can fillup their payment information.
+- After completion of their payment, they can get a transectionId and an email.
+## Documentation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Documentation](https://github.com/EmranSWE/easy-doctors-portal-client/blob/main/README.md)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots for :
+#### Desktop / Laptop
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Home
+![App Screenshot](https://i.ibb.co/3khpZKT/screencapture-easy-doctors-portal-web-app-2022-11-26-01-25-26.png)
+- Login / Signup
+![App Screenshot](https://i.ibb.co/h9N0TjC/screencapture-easy-doctors-portal-web-app-login-2022-11-26-01-26-29.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Appointment Page
+![App Screenshot](https://i.ibb.co/C8ks521/screencapture-easy-doctors-portal-web-app-appointment-2022-11-26-01-28-29.png)
 
-## Learn More
+- Appointment Booking Modal
+![App Screenshot](https://i.ibb.co/VCfm61B/Screenshot88.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Patient Dashboard
+![App Screenshot](https://i.ibb.co/mz7S6WM/screencapture-easy-doctors-portal-web-app-dashboard-2022-11-26-01-33-43.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Manage Doctor 
+![App Screenshot](https://i.ibb.co/gvtxRgG/screencapture-easy-doctors-portal-web-app-dashboard-manage-Doctor-2022-11-26-01-35-33.png)
 
-### Code Splitting
+- Add Doctor 
+![App Screenshot](https://i.ibb.co/jH3C9mc/screencapture-easy-doctors-portal-web-app-dashboard-add-Doctor-2022-11-26-01-37-04.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Mobile device
+- Home
+![App Screenshot](https://i.ibb.co/Mp8BTZ4/screencapture-easy-doctors-portal-web-app-2022-11-26-01-38-03.png)
 
-### Analyzing the Bundle Size
+- Appointment
+![App Screenshot](https://i.ibb.co/zPqZ5K6/screencapture-easy-doctors-portal-web-app-appointment-2022-11-26-01-38-47.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Installation
+- First, Download Or Clone the repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+  cd `repository`
+  npm install 
+  npm run start
+```
 
-### Advanced Configuration
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+To deploy this project run
 
-### Deployment
+```bash
+  npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For support, email me mdemran.swe@gmail.com or visite my  [Website](https://emran-portfolio.web.app/)
+
+
+## Feedback
+
+If you have any feedback, please reach out me to
+mdemran.swe@gmail.com
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://emran-portfolio.web.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emran2k18/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/EmranSwe)
+
+
+## Contributing
+
+Contributions are always welcome!
+For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+See `contributing.md` for ways to get started follow me on github.
+
+Please adhere to this project's `code of conduct`.
+## Acknowledgements
+
+I would like to express my special thanks of gratitude to different technology relevent blog writter and stack overflow contributor for their able guidance in completing my project.
+
+
+## Authors
+
+- [@Emran](https://github.com/EmranSWE)
+
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) This project is licensed under the MIT License - see the `LICENSE.md `file for details
+
+
+
