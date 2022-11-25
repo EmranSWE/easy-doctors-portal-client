@@ -1,4 +1,5 @@
 
+
 # Project Name: Easy Doctors Portal
 
 The easy Doctors portal is online doctor and patient management service.In this website, patient can booking appoinment.
@@ -63,31 +64,31 @@ Easy Doctors Portal:-
 ## Screenshots for :
 #### Desktop / Laptop
 
-- Home
+##### Home
 ![App Screenshot](https://i.ibb.co/3khpZKT/screencapture-easy-doctors-portal-web-app-2022-11-26-01-25-26.png)
-- Login / Signup
+##### Login / Signup
 ![App Screenshot](https://i.ibb.co/h9N0TjC/screencapture-easy-doctors-portal-web-app-login-2022-11-26-01-26-29.png)
 
-- Appointment Page
+##### Appointment Page
 ![App Screenshot](https://i.ibb.co/C8ks521/screencapture-easy-doctors-portal-web-app-appointment-2022-11-26-01-28-29.png)
 
-- Appointment Booking Modal
+##### Appointment Booking Modal
 ![App Screenshot](https://i.ibb.co/VCfm61B/Screenshot88.png)
 
-- Patient Dashboard
+##### Patient Dashboard
 ![App Screenshot](https://i.ibb.co/mz7S6WM/screencapture-easy-doctors-portal-web-app-dashboard-2022-11-26-01-33-43.png)
 
-- Manage Doctor 
+##### Manage Doctor 
 ![App Screenshot](https://i.ibb.co/gvtxRgG/screencapture-easy-doctors-portal-web-app-dashboard-manage-Doctor-2022-11-26-01-35-33.png)
 
-- Add Doctor 
+##### Add Doctor 
 ![App Screenshot](https://i.ibb.co/jH3C9mc/screencapture-easy-doctors-portal-web-app-dashboard-add-Doctor-2022-11-26-01-37-04.png)
 
 ### Mobile device
-- Home
+##### Home
 ![App Screenshot](https://i.ibb.co/Mp8BTZ4/screencapture-easy-doctors-portal-web-app-2022-11-26-01-38-03.png)
 
-- Appointment
+##### Appointment
 ![App Screenshot](https://i.ibb.co/zPqZ5K6/screencapture-easy-doctors-portal-web-app-appointment-2022-11-26-01-38-47.png)
 
 
@@ -148,6 +149,5 @@ I would like to express my special thanks of gratitude to different technology r
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) This project is licensed under the MIT License - see the `LICENSE.md `file for details
-
 
 
