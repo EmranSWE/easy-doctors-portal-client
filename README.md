@@ -14,6 +14,10 @@ The easy Doctors portal is online doctor and patient management service.In this 
 Easy Doctors Portal:-
 [Live Demo](https://easy-doctors-portal.web.app/)
 
+## Documentation
+
+[Documentation](https://drive.google.com/file/d/1Va1q5kJcqxa0fa8d39YZBxcf7eLY6xJf/view?usp=sharing)
+
 ## Technology Stack
 * HTML5
 * CSS3
