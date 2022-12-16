@@ -8,7 +8,7 @@ import CheckoutForm from './CheckoutForm';
 const stripePromise = loadStripe('pk_test_51M05zgFXEoII0xDNZIsXUD4aExT2gPuSHsMbldhAJxxzsC3vPKQx45W9cRSNqZmMEQLohaUWEhfUzYC8GoOLkcG700tqHnQxAd');
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:5000/booking/${id}`
+    const url = `https://easy-doctors-portal-8vkjy.ondigitalocean.app/booking/${id}`
     const { data: appointment, isLoading } = useQuery(['service', id], () => fetch(url, {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

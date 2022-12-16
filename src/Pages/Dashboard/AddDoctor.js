@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const AddDoctor = () => {
     const { register,reset, formState: { errors }, handleSubmit } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://easy-doctors-portal-8vkjy.ondigitalocean.app/service').then(res => res.json()))
 
 
     /* 
@@ -34,7 +34,7 @@ const AddDoctor = () => {
                     img:img
                 }
                 //send to your database
-                fetch('http://localhost:5000/doctor',{
+                fetch('https://easy-doctors-portal-8vkjy.ondigitalocean.app/doctor',{
                     method:"POST",
                     headers:{
                         'content-type': 'application/json',

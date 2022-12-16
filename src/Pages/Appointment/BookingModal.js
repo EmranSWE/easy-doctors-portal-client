@@ -23,7 +23,7 @@ const BookingModal = ({ date, treatment, setTreatment,refetch }) => {
             name:user.displayName};
 
         //Post to the server
-        fetch('http://localhost:5000/booking', {
+        fetch('https://easy-doctors-portal-8vkjy.ondigitalocean.app/booking', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
