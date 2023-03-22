@@ -6,7 +6,7 @@ const useAdmin = user => {
     useEffect( () =>{
         const email = user?.email;
         if(email){
-            fetch(`https://easy-doctors-portal-8vkjy.ondigitalocean.app/admin/${email}`, {
+            fetch(`https://easy-doctors-portals.onrender.com/admin/${email}`, {
                 method:'GET',
                 headers: {
                     'content-type': 'application/json',

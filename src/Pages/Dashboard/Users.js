@@ -4,7 +4,7 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const Users = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://easy-doctors-portal-8vkjy.ondigitalocean.app/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://easy-doctors-portals.onrender.com/user', {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

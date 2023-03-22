@@ -7,7 +7,7 @@ import DoctorRow from './DoctorRow';
 
 const ManageDoctors = () => {
     const [deletingDoctor,setDeletingDoctor]=useState(null)
-    const { data: doctors, isLoading ,refetch} = useQuery('doctors', () => fetch('https://easy-doctors-portal-8vkjy.ondigitalocean.app/doctor', {
+    const { data: doctors, isLoading ,refetch} = useQuery('doctors', () => fetch('https://easy-doctors-portals.onrender.com/doctor', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

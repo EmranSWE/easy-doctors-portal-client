@@ -10,12 +10,12 @@ const AvailableAppointment = ({ date }) => {
     const [treatment,setTreatment]=useState(null);
     const formattedDate=format(date,'PP');
     // useEffect(() => {
-    //     fetch(`https://easy-doctors-portal-8vkjy.ondigitalocean.app/available?date=${formattedDate}`)
+    //     fetch(`https://easy-doctors-portals.onrender.com/available?date=${formattedDate}`)
     //         .then(res => res.json())
     //         .then(data => setServices(data))
     // }, [formattedDate]);
     const {data: services,isLoading,refetch}=useQuery(['available',formattedDate],()=>
-        fetch(`https://easy-doctors-portal-8vkjy.ondigitalocean.app/available?date=${formattedDate}`)
+        fetch(`https://easy-doctors-portals.onrender.com/available?date=${formattedDate}`)
         .then(res => res.json())
     )
 

@@ -15,7 +15,7 @@ const CheckoutForm = ({appointment}) => {
     const { _id, price, name } = appointment;
 
     useEffect(() => {
-        fetch('https://easy-doctors-portal-8vkjy.ondigitalocean.app/create-payment-intent', {
+        fetch('https://easy-doctors-portals.onrender.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -80,7 +80,7 @@ const CheckoutForm = ({appointment}) => {
                 appointment:_id,
                 transactionId:paymentIntent.id
             }
-            fetch(`https://easy-doctors-portal-8vkjy.ondigitalocean.app/booking/${_id}`,{
+            fetch(`https://easy-doctors-portals.onrender.com/booking/${_id}`,{
                 method:'PATCH',
                 headers: {
                     'content-type': 'application/json',

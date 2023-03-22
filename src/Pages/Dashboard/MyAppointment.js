@@ -9,7 +9,7 @@ const MyAppointment = () => {
     const navigate=useNavigate()
     useEffect(()=>{
         if(user){
-            fetch(`https://easy-doctors-portal-8vkjy.ondigitalocean.app/booking?patient=${user.email}`,{
+            fetch(`https://easy-doctors-portals.onrender.com/booking?patient=${user.email}`,{
               method:'GET',
               headers:{
                 'authorization':`Bearer ${localStorage.getItem('accessToken')}`
